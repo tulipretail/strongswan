@@ -26,6 +26,6 @@ conn L2TP-PSK-noNAT
     type=transport
     ### NOTE:  "left" here is "the VPN server in the cloud".  Change this to your public IP.
     left=<%= node['openswan']['public_ip'] %>
-    leftprotoport=17/1701
+    leftprotoport=17/%any
     right=%any
     rightprotoport=17/%any
