@@ -3,7 +3,7 @@ execute "apt-get update" do
   not_if "ls /etc/apt/openswan_update_completed"
 end
 
-package "openswan" do
+package "strongswan" do
   action :install
 end
 
